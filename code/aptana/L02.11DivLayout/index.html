@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>HTML布局</title>
+		
+		<style type="text/css">
+		
+			body{
+				margin: 0px;
+			}
+			
+			#mainContainer{
+				background-color: gray;
+			}
+			#header{
+				background-color: red;
+				font-size: 18pt;
+			}
+			#footer{
+				background-color: red;
+			}
+			
+			#menu{
+				float: left;
+				background-color: blue;
+				height: 100%;
+			}
+			
+			#contentContainer{
+				height: 300px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="mainContainer">
+			<div id="header">梦宇</div>
+			<div id="contentContainer">
+				<div id="menu">
+					这里是菜单列<br />
+					<ul>
+						<li>Java</li>
+						<li>C#</li>
+						<li>PHP</li>
+						<li>JavaScript</li>
+						<li>Dart</li>
+						<li>ObjC</li>
+					</ul>
+				</div>
+				<div id="content">这里是内容列</div>
+			</div>
+			<div id="footer">统计，备案，版权</div>
+		</div>
+	</body>
+</html>

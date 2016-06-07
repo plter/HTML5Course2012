@@ -1,0 +1,28 @@
+.slideright.in {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-webkit-animation-name: slideinfromleft;
+	-moz-animation-name: slideinfromleft;
+}
+
+.slideright.out {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-webkit-animation-name: slideouttoright;
+	-moz-animation-name: slideouttoright;
+}
+
+
+.slideright.in.reverse {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-webkit-animation-name: slideinfromright;
+	-moz-animation-name: slideinfromright;
+}
+
+.slideright.out.reverse {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-webkit-animation-name: slideouttoleft;
+	-moz-animation-name: slideouttoleft;
+}

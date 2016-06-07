@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS</title>
+		
+		<style type="text/css">
+			
+			body{
+				background-color: #CCCCCC;
+			}
+			
+			p,label{
+				background-color: #FFFFFF;
+				color: #0000FF;
+			}
+			
+			strong{
+				color: #0000FF;
+			}
+			
+		/*子代选择器*/
+			li>strong{
+				color: #FF0000;
+			}
+			
+		/*后代选择器*/
+			li strong{
+				color: #FF0000;
+			}
+			
+			#plter{
+				color: #FF0000;
+				font-size: 20pt;
+			}
+			
+			.txt{
+				color: #00FF00;
+			}
+			
+		/*相邻兄弟选择器*/
+			hr+p{
+				color: #FF0000;
+			}
+			
+		/*属性中包括该单词，以空格分开*/
+			input[value~=Hello]{
+				color: #FFFF00;
+			}
+			
+		/*属性中包括该单词，以模杠分开*/
+			[value|=Hello]{
+				color: #FF00FF;
+			}
+			
+			[value=Haha]{
+				color: #0000FF;
+			}
+			
+			a:link{
+				color: #00FF00;
+			}
+			
+			a:visited{
+				color: #FF0000;
+			}
+			
+			a:hover{
+				color:#0000FF;
+			}
+			
+			#myTxt:first-letter{
+				font-size: 20pt;
+				font-weight: bold;
+				color: #000000;
+			}
+			
+			/*label{
+				background-color: #FFFFFF;
+				color: #0000FF;
+			}*/
+			
+		</style>
+	</head>
+	
+	<body>
+		<hr width="100%" />
+		<p>Hello</p>
+		<p>CSS</p>
+		<p>HTML5</p>
+		<p id="plter">梦宇</p>
+		<hr width="100%" />
+		<label>我相信我能够学会任何编程语言</label>
+		<hr width="100%" />
+		
+		<ul>
+			<li><span><strong>女孩</strong></span></li>
+			<li><strong>男孩</strong></li>
+			<li><strong>老人</strong></li>
+		</ul>
+		
+		<strong>学生</strong>
+		<hr width="100%" />
+		
+		<label class="txt">小吴同学今天回来了吗？</label>
+		<div class="txt">听说小刘同学和小吴同学一起去了</div>
+		
+		<hr width="100%" />
+		
+		<input type="text" value="Haha" />
+		<input type="text" value="Hello Wu" />
+		<input type="text" value="Hello Liu" />
+		<input type="text" value="Hello-World" />
+		<input type="text" value="Hello-Wu" />
+		<input type="text" value="Hello-Liu" />
+		<span value="Hello Span">这里是一个Span</span>
+		
+		<hr width="100%" />
+		<a href="http://plter.com">梦宇</a>
+		
+		<hr width="100%" />
+		<p id="myTxt">今天中午吃什么？</p>
+</html>	
